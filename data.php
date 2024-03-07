@@ -21,8 +21,10 @@ function xmlToJson($xml) {
     }
     return json_encode($data);
 }
-$xml = file_get_contents("http://www.ign.es/ign/RssTools/sismologia.xml");
 
+
+
+$xml = file_get_contents("http://www.ign.es/ign/RssTools/sismologia.xml");
 
 $json = xmlToJson($xml);
 echo $json;
